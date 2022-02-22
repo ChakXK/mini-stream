@@ -1,0 +1,17 @@
+<div class="container h-100">
+    <div class="row h-100 justify-content-center align-items-center">
+        <div class="col-5 card login-card p-4 shadow">
+            <h2 class="text-center">Sign In</h2>
+            <div class="input-group mb-3">
+                <label for="email">Email</label>
+                <input type="text" #email placeholder="Email" class="w-100 rounded" />
+            </div>
+            <div class="input-group mb-3">
+                <label for="password">Password</label>
+                <input type="text" #password placeholder="Password" class="w-100 rounded" />
+            </div>
+            <button (click)="onSignIn(email.value, password.value)" 
+            class="mb-3 rounded">Sign In</button>
+        </div>
+    </div>
+</div>

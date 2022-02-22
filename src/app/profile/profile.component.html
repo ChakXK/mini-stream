@@ -1,0 +1,21 @@
+<app-navigator></app-navigator>
+<div class="container h-100">
+  <div class="row h-100 justify-content-center align-items-center">
+    <div class="col-5 card login-card p-4 shadow">
+      <h2 class="text-center">Profile</h2>
+      <div class="input-group mb-3">
+        <label for="username">Username</label>
+        <input type="text" #username [(ngModel)]="userData.name" placeholder="Username" class="w-100 rounded" />
+      </div>
+      <div class="input-group mb-3">
+        <label for="email">Email</label>
+        <input type="text" #email [value]="userEmail" disabled class="w-100 rounded" />
+      </div>
+      <div class="input-group mb-3">
+        <label for="age">Age</label>
+        <input type="text" #age [(ngModel)]="userData.age" placeholder="age" class="w-100 rounded" />
+      </div>
+      <button (click)="onSave()" class="mb-3 rounded">Save</button>
+    </div>
+  </div>
+</div>
